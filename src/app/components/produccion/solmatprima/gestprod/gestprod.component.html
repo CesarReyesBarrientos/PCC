@@ -1,0 +1,74 @@
+<body>
+
+<br><br>
+<h1 class="tipo2" style="color: white; text-align: center;">Registro de Producción</h1> <br>
+<h2 class="tipo3" style="color: white; text-align: center;">(Producción)</h2>
+<br><br><br>
+<div class="parent">
+    <div class="div2"> 
+        <form class="pedidos" >
+            <h1 style="font-size: 30px;">Registrar Producción</h1> <br>
+            <div>
+                <label>ID de Orden de Compra</label>
+                <input class="controls"  required>
+            </div>
+            <br>
+            <div>
+                <label>Detalles de la Orden de Compra</label>
+                <textarea class="controls" required></textarea>
+            </div>
+            <br>
+            <div>
+                <input class="btn btn-light" type="submit" >
+            </div>
+        </form>
+    </div>
+
+<div class="div1">
+<div class="container2 ">
+    <div class="table_header"> 
+      <div class="input_search">
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><h2>Órdenes que ya llegaron a Producción</h2></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div style="text-align: justify;">
+                <strong>ID de Orden:</strong>12345<br>
+                <strong>Detalles:</strong> 100 unidades de producto XYZ <br><br>
+                <button class="btn btn-light Empez-prod" >Aprobar y Empezar Producción</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="text-align: justify;">
+                <strong>ID de Orden:</strong> 67890<br>
+                <strong>Detalles:</strong> 200 unidades de producto ABC <br><br>
+                <button class="btn btn-light Empez-prod">Aprobar y Empezar Producción</button>
+            </div>
+          </td>
+
+        </tr>
+        
+      </tbody>
+    </table>
+    <div class="table_footer">
+        
+    </div>
+  </div>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+
+<br><br><br>
+<span style="padding-left: 90%;">&nbsp;</span><button [routerLink]="['/modo']"  class="button2 "> Regresar</button>
+<br><br><br>
+</body>

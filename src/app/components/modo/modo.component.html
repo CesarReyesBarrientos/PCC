@@ -1,0 +1,62 @@
+
+
+<div class="con">
+        <div class=" box box1">
+            
+            <!-- <img src="../../../assets/imagenes/almacen.png" alt="" height="250px"> -->
+            <img src="../../../assets/imagenes/almacenw.png" alt="" height="160px">
+            <br><br>
+            <h2 class="nom mi Op-inve">Inventario</h2>
+            <br>
+          <hr class="si">
+          <ul>
+            <p class="mi" [routerLink]="['/gest-prod']">Gestionar Inventario</p>
+            <p class="mi" [routerLink]="['/gest-mat']">Consultar Inventario</p>
+            <p class="mi" [routerLink]="['/gest-prove']">Gestion de proovedores</p>
+          </ul>
+          <hr class="si">
+          <br>
+
+          <a href="#" class="boton-redondo mi" [routerLink]="['/gest-prod']">Ir a almacén <i class="fa-solid fa-arrow-right fa-lg"></i> </a>
+
+
+        </div>
+
+        <div class=" box box2">
+            <img src="../../../assets/imagenes/produccionw.png" alt="" height="160px">
+            <br><br>
+            <h2 class="nom mi">Producción  </h2>
+            <br>
+            <hr class="si Op-prod">
+            <ul>
+                <p [routerLink]="['/sol-mat']" class="mi">Solicitar materia prima</p>
+                <p [routerLink]="['/gest-produccion']"  class="mi">Registrar orden de producción</p>
+                <p [routerLink]="['/seg-prod']" class="mi">Gestionar Orden de producción</p>
+    
+              </ul>
+              <hr class="si">
+              <br>
+              <a [routerLink]="['/gest-produccion']" class="boton-redondo mi">Ir a producción <i class="fa-solid fa-arrow-right fa-lg"></i> </a>
+
+        </div>
+
+        <div class=" box box3">
+         
+            <!-- <img src="../../../assets/imagenes/venta.png" alt="" height="250px"> -->
+            <img src="../../../assets/imagenes/ventaw.png" alt="" height="160px">
+            <br><br>
+            <h2 class="nom mi Op-ventas">Ventas</h2>
+            <br>
+            <hr class="si">
+            <ul>
+                <p class="mi" [routerLink]="['/order']">Registrar Nota de Venta</p>
+                <p class="mi" [routerLink]="['/client-mgmt']">Gestionar clientes</p>
+                <p class="mi" [routerLink]="['/client/:orderId']">Seguir Pedido</p>
+    
+              </ul>
+              <hr class="si">
+                <br>
+              <a [routerLink]="['/order']" class="boton-redondo mi">Ir a ventas <i class="fa-solid fa-arrow-right fa-lg"></i> </a>
+              
+        </div>
+</div>

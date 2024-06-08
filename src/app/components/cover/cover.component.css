@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'norm';
+    src: url(../../../assets/Roboto/Roboto-Light.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'bol';
+    src: url(../../../assets/Roboto/Roboto-Bold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'curvy';
+    src: url(../../../assets/Caveat/Caveat-Regular.ttf) format('truetype');
+  }
+.uno{
+    color: white;
+    
+    font-size: 130px;
+}
+.dos{
+    color: white;
+    font-family: bol;
+    font-size: 130px;
+}
+.tres{
+    color: white;
+    font-size: 130px;
+    font-family:norm;
+      display: flex;  
+     justify-content: center; 
+     align-items: center;
+    
+}
+.cuatro{
+    color: white;
+    font-size: 80px;
+    font-family: curvy;
+    line-height: 0;
+     display: flex;  
+    justify-content: right; 
+    align-items: center;
+    padding-right: 280px;
+}
+.fondo{  
+    background-color: rgb(21, 50, 244);  
+
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    min-height: 100vh; 
+    width: 100%;
+
+}
+.espacio{
+    font-size: 30px;
+}
+.logo{
+    padding-top: 200px;
+    /* display: flex;  */
+    justify-content: center; 
+    align-items: center;
+}
+.iconitos{
+   position: absolute;
+    right: 0px;
+    padding-right: 40px;
+  bottom: 35px;
+    
+}
+
+.ico{
+    height: 60px;
+    width: 60px;
+    margin: 0 25px; 
+}

@@ -1,0 +1,179 @@
+<body>
+    <br>
+    <h1 class="tipo2" style="text-align: center; color: white;">Registrar Nota de Venta</h1>
+    <h2 class="tipo3" style="text-align: center; color: white;">(Ventas)</h2>
+    <br>
+    
+    <div *ngIf="alertMessage" class="alert alert-warning">
+      {{ alertMessage }}
+    </div>
+  
+    <div class="parent pedidos Intro-datos">
+        <div class="div1"> 
+               <label for="name">Customer: </label><br>
+               <input class="controls" type="text" id="name" ><br>
+       </div>
+
+       <div class="div2"> 
+           <label for="invoice">Invoice: </label><br>
+           <input class="controls" type="text" id="invoice"  disabled><br>
+            disabled 
+       </div>
+
+       <div class="div3"> 
+           <label for="qty">Quantity: </label><br>
+           <input class="controls"  type="text" id="qty"><br>
+       </div>
+
+       <div class="div4">
+           <label for="model">Model: </label> <br>
+           <select class="controls"  id="model" >
+               <option value="JTEK">JTEK</option>
+               <option value="FWI">FWI</option>
+               <option value="JTEK.mini">JTEK.mini</option>
+               <option value="FWI.mini">FWI.mini</option>
+               <option value="G-TEK">G-TEK</option>
+               <option value="M-TEK">M-TEK</option>
+               <option value="NC">NC</option>
+               <option value="COPPER H.">COPPER H.</option>
+               <option value="JTEK.CE">JTEK.CE</option>
+               <option value="JTEK.CE.mini">JTEK.CE.mini</option>
+               <option value="FWI.small.bx">FWI.small.bx</option>
+               <option value="JTEK.small.box">JTEK.small.box</option>
+               <option value="iSHOT">iSHOT</option>
+           </select>
+           <br>
+       </div>
+
+       <div class="div5"> 
+           <label for="tek">TEK: </label><br>
+           <select class="controls"  id="tek" [(ngModel)]="tek">
+               <option value="0.4166666667">5IN</option>
+               <option value="0.5">6IN</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="13.16">12</option>
+               <option value="13">13</option>
+               <option value="14">14</option>
+               <option value="16.334">15</option>
+               <option value="6">6S</option>
+               <option value="10">10S</option>
+               <option value="18">18</option>
+               <option value="19">19</option>
+               <option value="20">20</option>
+               <option value="21">21</option>
+               <option value="22">22</option>
+               <option value="23">23</option>
+               <option value="24">24</option>
+               <option value="25">25</option>
+               <option value="26">26</option>
+               <option value="27">27</option>
+               <option value="28">28</option>
+               <option value="29">29</option>
+               <option value="30">30</option>
+               <option value="31">31</option>
+               <option value="32">32</option>
+               <option value="33">33</option>
+               <option value="34">34</option>
+               <option value="35">35</option>
+               <option value="36">36</option>
+               <option value="37">37</option>
+               <option value="38">38</option>
+               <option value="39">39</option>
+               <option value="40">40</option>
+               <option value="41">41</option>
+               <option value="42">42</option>
+               <option value="43">43</option>
+               <option value="44">44</option>
+               <option value="45">45</option>
+               <option value="46">46</option>
+               <option value="47">47</option>
+               <option value="0.25">3IN</option>
+               <option value="0.3333333333">4IN</option>
+             </select>
+             <br>
+       </div>
+
+       <div class="div6"> 
+           <label for="shruds">Shruds: </label> <br>
+           <select class="controls"  id="shruds">
+               <option value="RP">RP</option>
+               <option value="TP">TP</option>
+               <option value="CP">CP</option>
+               <option value="NP">NP</option>
+               <option value="V">V</option>
+               <option value="STI">STI</option>
+               <option value="NRP">NRP</option>
+               <option value="iSHOT PCB">iSHOT PCB</option>
+           </select><br>
+       </div>
+
+       <div class="div7"> 
+           <label for="wrap">WRAP: </label><br>
+           <select class="controls"  id="wrap" >
+               <option value="8">8</option>
+               <option value="S">S</option>
+               <option value="COILED">COILED</option>
+               <option value="FH">FH</option>
+               <option value="OTHET">OTHET</option>
+           </select>
+           <br>
+       </div>
+       <div class="div8">
+           <label for="col">Color: </label><br>
+           <select class="controls"  id="col" >
+               <option value="Y">Y</option>
+               <option value="BW">BW</option>
+               <option value="BLK">BLK</option>
+               <option value="B">B</option>
+               <option value="OR">OR</option>
+               <option value="PINK">PINK</option>
+               <option value="GR">GR</option>
+               <option value="RED">RED</option>
+               <option value="WHITE">WHITE</option>
+               <option value="22AWG">22AWG</option>
+               <option value="26AWG">26AWG</option>
+               <option value="W. OTHER">W. OTHER</option>
+           </select>
+           <br>
+       </div>
+       <div class="div9"> 
+           <label for="tail">Tail: </label> <br>
+           <select class="controls"  id="tail" >
+               <option value="PS">PS</option>
+               <option value="QP MJG">QP MJG</option>
+               <option value="QP COBRA">QP COBRA</option>
+               <option value="QP MJGNC">QP MJGNC</option>
+               <option value="RJ12">RJ12</option>
+               <option value="RJ45">RJ45</option>
+               <option value="TW">TW</option>
+               <option value="T. OTHER">T. OTHER</option>
+           </select>
+           <br>
+       </div>
+       <div class="div10"> 
+           <label for="details">Details: </label><br>
+           <textarea class="controls"  id="details" ></textarea>
+       </div>
+
+      <div class="div11" style="text-align: center;">
+        <br><br>
+        <button class="btn btn-light Reg-ord-vent" (click)="enviar()">Enviar orden</button> &nbsp;
+        <button class="btn btn-light Cortar-prod"  (click)="agregar()">Agregar lote</button> &nbsp;
+        <button class="btn btn-light"  (click)="mostrar()">Mostrar lotes registrados</button>        
+        </div>
+    </div>
+    <br><br> 
+    <span style="padding-left: 90%;">&nbsp;</span><button [routerLink]="['/modo']" class="button2">Regresar</button>
+    <br><br>
+</body>
+  

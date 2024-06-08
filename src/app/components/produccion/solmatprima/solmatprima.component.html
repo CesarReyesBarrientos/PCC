@@ -1,0 +1,26 @@
+<body>
+    <br><br>
+    <h1 class="tipo2" style="color: white; text-align: center;">Solicitar Materia Prima</h1> <br>
+    <h2 class="tipo3" style="color: white; text-align: center;">(Producción)</h2>
+    <br>
+    <form class="pedidos Sol-mat-prim" >
+        <div class="form-group ">
+            <label for="orderNumber">Número de Orden:</label>
+            <input class="controls" type="text" id="orderNumber" name="orderNumber" required>
+        </div>
+        <div class="form-group">
+            <label for="materialType">Tipo de Material:</label>
+            <input class="controls" type="text" id="materialType" name="materialType" required>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Cantidad:</label>
+            <input class="controls" type="number" id="quantity" name="quantity" required>
+        </div>
+        <br>
+        <button type="button" class="btn btn-light" >Registrar Orden</button>
+    </form>
+    <br><br><br><br><br><br>
+    <span style="padding-left: 90%;">&nbsp;</span><button [routerLink]="['/modo']" class="button2">Regresar</button>
+    <br><br>
+
+</body>   

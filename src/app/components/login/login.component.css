@@ -1,0 +1,72 @@
+  *{
+    margin:0;
+    padding: 0;
+}
+.userr{
+    padding-top: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.bod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    height: 100vh;
+    background-image: url(../../../assets/imagenes/four.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.box{
+height: 40px;
+display: flex;
+cursor: pointer;
+padding: 10px 20px;
+background: #fff;
+border-radius: 30px;
+align-items: center;
+box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.box:hover input{
+    width: 400px;
+
+}
+
+.box input{
+    width: 400px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+
+}
+.box a .fas{
+    color: pink;
+    font-size: 18px;
+}  
+
+.name{
+    color: white;
+    font-family: norm;
+    
+}
+@font-face {
+    font-family: 'norm';
+    src: url(../../../assets/Roboto/Roboto-Regular.ttf) format('truetype');
+  }
