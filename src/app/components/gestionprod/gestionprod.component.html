@@ -4,102 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestionar Inventario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
-<body id="body1">
-        <br><br>
-            <a style="text-align: center;" class="navbar-brand mx-auto d-block ">
-                <span class="tipo1 color1 tam1">Pyro</span><span class="tipo2 color1 tam1">Control</span><span class="color1 tam1">Center</span><br>
-                <span class="tipo3 insp tam2">inspiring changes</span><br><br>
-                <span class="tipo2 color1 tam1">Gestionar Inventario</span>
-            </a>
-            <br><br>
-            <body id="body2">
-                <div class="container2">
-                    <div class="table_header">
-                      <h2>Productos</h2>
-                      <button class="button1">Crear nuevo</button>
-                      
-                      <div class="input_search">
-                        <input class="Buscar-prod" type="search" placeholder="Buscar" />
-                        <i class="bi bi-search" id="search"></i>
-                      </div>
+<body class="inventory-body">
+    <header class="inventory-header">
+        <div class="brand-container">
+            <h1 class="logo">
+                <span class="logo-part logo-light">Pyro</span>
+                <span class="logo-part logo-bold">Control</span>
+                <span class="logo-part logo-center">Center</span>
+            </h1>
+            <p class="logo-slogan">inspiring changes</p>
+            <h2 class="page-title">Gestionar Inventario</h2>
+        </div>
+    </header>
+
+    <main class="inventory-main">
+        <div class="inventory-container">
+            <div class="table-controls">
+                <h2 class="table-title">Productos</h2>
+                <div class="controls-right">
+                    <div class="search-container">
+                        <input type="search" class="search-input" placeholder="Buscar producto..." />
+                        <i class="bi bi-search search-icon"></i>
                     </div>
-                    <table>
-                      <thead>
+                    <button class="btn-primary btn-new">
+                        <i class="bi bi-plus-lg"></i>
+                        <span class="btn-text">Nuevo</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="inventory-table">
+                    <thead>
                         <tr>
-                          <th>Nombre de producto <i class="bi bi-chevron-expand"></i></th>
-                          <th>Numero de Lote <i class="bi bi-chevron-expand"></i></th>
-                          <th>Descripción <i class="bi bi-chevron-expand"></i></th>
-                          <th>Operaciones <i class="bi bi-chevron-expand"></i></th>
+                            <th data-sort="name">
+                                <span>Nombre</span>
+                                <i class="bi bi-chevron-expand"></i>
+                            </th>
+                            <th data-sort="batch">
+                                <span>Lote</span>
+                                <i class="bi bi-chevron-expand"></i>
+                            </th>
+                            <th data-sort="description">
+                                <span>Descripción</span>
+                                <i class="bi bi-chevron-expand"></i>
+                            </th>
+                            <th>Acciones</th>
                         </tr>
-                      </thead>
-                      <tbody>
+                    </thead>
+                    <tbody>
                         <tr>
-                          <td>Producto01</td>
-                          <td>1234</td>
-                          <td>Descripción producto</td>
-                          <td>
-                            <i class="bi bi-pencil-square Edit-prod" id="icons"></i
-                            ><i class="bi bi-trash" id="icons"></i>
-                          </td>
+                            <td data-label="Nombre">Producto01</td>
+                            <td data-label="Lote">1234</td>
+                            <td data-label="Descripción">Descripción del producto</td>
+                            <td data-label="Acciones" class="actions-cell">
+                                <button class="btn-icon btn-edit" title="Editar">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                                <button class="btn-icon btn-delete" title="Eliminar">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </td>
                         </tr>
-                        <tr>
-                          <td>Producto01</td>
-                          <td>1234</td>
-                          <td>Descripción producto</td>
-                          <td>
-                            <i class="bi bi-pencil-square Edit-prod" id="icons"></i
-                            ><i class="bi bi-trash" id="icons"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Producto01</td>
-                          <td>1234</td>
-                          <td>Descripción producto</td>
-                          <td>
-                            <i class="bi bi-pencil-square Edit-prod" id="icons"></i
-                            ><i class="bi bi-trash" id="icons"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Producto01</td>
-                          <td>1234</td>
-                          <td>Descripción producto</td>
-                          <td>
-                            <i class="bi bi-pencil-square Edit-prod" id="icons"></i
-                            ><i class="bi bi-trash" id="icons"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Producto01</td>
-                          <td>1234</td>
-                          <td>Descripción producto</td>
-                          <td>
-                            <i class="bi bi-pencil-square Edit-prod" id="icons"></i
-                            ><i class="bi bi-trash" id="icons"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Producto01</td>
-                          <td>1234</td>
-                          <td>Descripción producto</td>
-                          <td>
-                            <i class="bi bi-pencil-square Edit-prod" id="icons"></i
-                            ><i class="bi bi-trash" id="icons"></i>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="table_footer">
-                        <br>
-                    </div>
-                  </div>
-            
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
-               
-            </body>
-            <br><br>
-            <span style="padding-left: 90%;">&nbsp;</span><button [routerLink]="['/modo']" class="button2"> Regresar</button>
-            <br><br>
+                        <!-- Más filas de productos... -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <button [routerLink]="['/modo']" class="btn-primary btn-back">
+                    <i class="bi bi-arrow-left"></i>  
+                    <span class="btn-text">Regresar</span>
+                </button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

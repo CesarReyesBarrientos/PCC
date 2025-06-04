@@ -1,73 +1,121 @@
+/* Fuentes */
 @font-face {
-    font-family: 'norm';
-    src: url(../../../assets/Roboto/Roboto-Light.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: 'bol';
-    src: url(../../../assets/Roboto/Roboto-Bold.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: 'curvy';
-    src: url(../../../assets/Caveat/Caveat-Regular.ttf) format('truetype');
-  }
-.uno{
-    color: white;
-    
-    font-size: 130px;
+  font-family: 'norm';
+  src: url(../../../assets/Roboto/Roboto-Light.ttf) format('truetype');
 }
-.dos{
-    color: white;
-    font-family: bol;
-    font-size: 130px;
+@font-face {
+  font-family: 'bol';
+  src: url(../../../assets/Roboto/Roboto-Bold.ttf) format('truetype');
 }
-.tres{
-    color: white;
-    font-size: 130px;
-    font-family:norm;
-      display: flex;  
-     justify-content: center; 
-     align-items: center;
-    
-}
-.cuatro{
-    color: white;
-    font-size: 80px;
-    font-family: curvy;
-    line-height: 0;
-     display: flex;  
-    justify-content: right; 
-    align-items: center;
-    padding-right: 280px;
-}
-.fondo{  
-    background-color: rgb(21, 50, 244);  
-
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center;
-    min-height: 100vh; 
-    width: 100%;
-
-}
-.espacio{
-    font-size: 30px;
-}
-.logo{
-    padding-top: 200px;
-    /* display: flex;  */
-    justify-content: center; 
-    align-items: center;
-}
-.iconitos{
-   position: absolute;
-    right: 0px;
-    padding-right: 40px;
-  bottom: 35px;
-    
+@font-face {
+  font-family: 'curvy';
+  src: url(../../../assets/Caveat/Caveat-Regular.ttf) format('truetype');
 }
 
-.ico{
-    height: 60px;
-    width: 60px;
-    margin: 0 25px; 
+/* Contenedor principal */
+.fondo {
+  background-color: rgb(21, 50, 244);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para mantener "PyroControlCenter" en una línea */
+.tres {
+  color: white;
+  font-size: clamp(40px, 8vw, 130px); /* Ajustado para mejor escalado */
+  font-family: norm;
+  display: flex;
+  justify-content: center;
+  align-items: baseline; /* Alinea los textos por su base */
+  flex-wrap: nowrap; /* Evita que se rompa en múltiples líneas */
+  white-space: nowrap; /* Fuerza a mantenerse en una línea */
+  line-height: 1;
+  margin: 0;
+  padding: 0 20px; /* Padding para evitar cortes en móviles */
+  overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+/* Ajustes para cada parte del texto */
+.uno, .dos, .tres > span:last-child {
+  display: inline-block;
+  line-height: 0.9; /* Ajuste fino de alineación vertical */
+}
+
+.uno {
+  color: white;
+  font-size: 1em; /* Hereda el tamaño del contenedor */
+}
+
+.dos {
+  color: white;
+  font-family: bol;
+  font-size: 1em; /* Hereda el tamaño del contenedor */
+}
+
+.tres > span:last-child {
+  font-family: norm;
+  font-size: 1em; /* Hereda el tamaño del contenedor */
+}
+
+.espacio {
+  font-size: 0.3em; /* Espacio relativo al tamaño actual */
+}
+
+/* Subtítulo */
+.cuatro {
+  color: white;
+  font-size: clamp(20px, 4vw, 60px); /* Tamaño más proporcional */
+  font-family: curvy;
+  text-align: center;
+  margin-top: -5px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+/* Media Queries para ajustes específicos */
+@media (max-width: 768px) {
+  .tres {
+    font-size: clamp(36px, 9vw, 80px); /* Tamaño más grande en móviles */
+    padding: 0 10px;
+  }
+  
+  .cuatro {
+    font-size: clamp(18px, 5vw, 40px);
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tres {
+    font-size: clamp(32px, 10vw, 60px);
+  }
+  
+  .cuatro {
+    font-size: clamp(16px, 6vw, 30px);
+    padding-right: 5%;
+  }
 }

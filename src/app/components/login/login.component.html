@@ -1,24 +1,19 @@
-
 <body>
+  <div class="login-wrapper">
+    <div class="user-avatar">
+      <img src="../../../../assets/imagenes/user2.png" alt="Acceso autorizado">
+    </div>
+    
+    <h1 class="access-title">Acceso Restringido</h1>
+    <p class="access-subtitle">Ingrese sus credenciales asignadas</p>
 
-         <div class="userr">
-         <img src="../../../../assets/imagenes/user2.png" alt="" height="140px">
-         </div>
-
-         <div class="titulo">
-            <h1 class="name">Usuario</h1>
-         </div>
-
- 
-
-
-         <div class="bod">
-            <div class="box">
-               <input type="password" placeholder="Contraseña">
-               <a class="Reg-cred" [routerLink]="['/modo']" routerLinkActive="router-link-active" >
-                  <i class="fa-solid fa-arrow-right fa-lg"></i> 
-               </a>
-            </div>
-         </div>
-</body>
-
+   <div class="access-form">
+      <div class="input-container">
+         <input type="password" placeholder="Contraseña" required>
+         <a [routerLink]="['/modo']" routerLinkActive="router-link-active" class="submit-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+         </a>
+      </div>
+   </div>
+  </div>
+</body>  
